@@ -1,0 +1,29 @@
+ALGORITHM algo1
+VAR
+    str : STRING := "The best in the world." ;
+    counter_carac : INTEGER := 0 ;
+    counter_words : INTEGER := 1 ;
+    counter_vowels : INTEGER := 0 ; **
+    
+BEGIN
+    FOR ( INTEGER i = 0; i < str.length(); i++ ) DO 
+        IF (str.charAt[i] != ' ') THEN
+            counter_carac++ ;
+        END_IF
+    END_FOR
+    Write('The number of caracters is : ' counter_carac) ;
+    FOR ( INTEGER i = 0; i < str.length(); i++ ) DO
+        IF (str.charAT[i] = " ") THEN
+            counter_words++ ;
+        END_IF
+    END_FOR
+    Write('The number of words is : ' counter_words)
+    FOR ( INTEGER i = 0; i < str.lenth(); i++ ) DO
+        IF (str.charAT[i] = "a","e","i","o","u","y"; i++ ) THEN
+            counter_vowels++ ;
+        END_IF
+    END_FOR
+    Write('The number of vowels is : ' counter_vowels)
+
+
+END
